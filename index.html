@@ -5,10 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <a href="https://www.figma.com/design/R9ujBBVVge1yUEPmqUdXSA/Gu%C3%ADa-estilo-portfolio-luis?node-id=9-107&t=WYfQu7MR0ngNW9yP-1">Ver proyecto Figma</a>
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="logo">LuisGordillo<span>Portfolio</span></div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+        </ul>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+    </nav>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+        <h1>Bienvenido a mi Portfolio</h1>
+        <div class="hero-buttons">
+            <button class="btn-primario">Ver proyectos</button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE PROYECTOS -->
+    <section id="proyectos" class="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div id="proyectos-container" class="grid-proyectos">
+            <div class="proyecto">
+                <div class="imagen-proyecto">
+                    <img src="/img/Figma-logo.svg">
+                </div>
+                <div class="contenido-proyecto">
+                    <h3>Guía de estilo en Figma</h3>
+                    <p>Guía de estilo de mi portfolio personal en figma</p>
+                    <button class="btn-primario"><a href="https://www.figma.com/design/R9ujBBVVge1yUEPmqUdXSA/Gu%C3%ADa-estilo-portfolio-luis?node-id=0-1&p=f&t=X3SMYiDK03j2Riev-0">Ver más</a></button>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="imagen-proyecto">
+                    <img src="/img/Portfolio.png">
+                </div>
+                <div class="contenido-proyecto">
+                    <h3>Portfolio Personal</h3>
+                    <p>Portfolio personal para mis proyectos creado con html, css y javascript</p>
+                    <button class="btn-primario"><a href="">Ver más</a></button>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="imagen-proyecto">
+                    <img src="img/imagen.png">
+                </div>
+                <div class="contenido-proyecto">
+                    <h3>Tarjeta</h3>
+                    <p>Descripción Tarjeta</p>
+                    <button class="btn-primario"><a href="">Ver más</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; 2025 MiPortfolio</p>
+            <a href="#inicio">Volver arriba ↑</a>
+        </div>
+    </footer>
+    </div>
 </body>
 
 </html>
