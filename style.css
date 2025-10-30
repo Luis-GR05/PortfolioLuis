@@ -148,7 +148,7 @@ body {
   box-shadow: 0 6px 10px rgba(0,0,0,0.1);
   padding: 24px;
   width: 95%;
-  min-height: 220px;
+  min-height: 350px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -177,12 +177,13 @@ body {
   font-family: var(--fontFamily-titulo);
   font-size: var(--h3-size);
   margin-bottom: 12px;
-  color: var(--color-principal);
+  color: var(--color-negro);
+  font-weight: bold;
 }
 
 .proyecto p {
   font-size: 15px;
-  color: #333;
+  color: var(--color-negro);
   margin-bottom: 16px;
 }
 
